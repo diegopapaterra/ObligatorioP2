@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="VeterinariaWebApp.PaginaMaestra" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" href="img/vet.png" />
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/sweetalert.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header>
+        <asp:Label ID="lblUsername" runat="server" Text=""></asp:Label>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".MenuGeneral" aria-expanded="false">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <asp:Menu ID="MenuAdministrador" Visible="false" runat="server" Orientation="Horizontal" CssClass="collapse navbar-collapse MenuGeneral">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/AltaUsuarios.aspx" Text="Alta Usuario" Value="F1 Alta Usuario"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/ModificarUsuario.aspx" Text="Modificar Usuario" Value="F1 Modificar Usuario"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AltaPatologia.aspx" Text="Alta Patologia" Value="F2 Alta Patologia"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AltaVeterinario.aspx" Text="Alta Veterinario" Value="F3 Alta Veterinario"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/CuotaMensual.aspx" Text="Cuota Mensual" Value="F5 Cuota Mensual"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AltaSocio.aspx" Text="Alta Socio" Value="F6 Alta Socio"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AltaMascota.aspx" Text="Alta Mascota" Value="F7 Alta Mascota"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/ListadoSocio.aspx" Text="Listado Socio" Value="Listado Socio"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/ListadoMascota.aspx" Text="Listado Mascota" Value="Listado Mascota"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/ListadoVeterinario.aspx" Text="Listado Veterinario" Value="Listado Veterinario"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/ListadoVetOrdenados.aspx" Text="Listado Veterinarios Ordenados" Value="Listado Veterinarios Ordenados"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <asp:Menu ID="MenuVeterinario" Visible="false" runat="server" Orientation="Horizontal" CssClass="collapse navbar-collapse MenuGeneral">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/AltaHistoriaClinica.aspx" Text="Alta Historia Clinica" Value="Alta Historia Clinica"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AltaCuadroClinico.aspx" Text="Alta Cuadro Clinico" Value="Alta Cuadro Clinico"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AltaAccionCuadroClinico.aspx" Text="Accion Cuadro Clinico" Value="Accion Cuadro Clinico"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/FinCuadroClinico.aspx" Text="Fin Cuadro Clinico" Value="Fin Cuadro Clinico"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/VerHistoriaClinica.aspx" Text="Ver Historia Mascota" Value="Ver Historia Mascota"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <asp:Menu ID="MenuSocio" Visible="false" runat="server" Orientation="Horizontal" CssClass="collapse navbar-collapse MenuGeneral">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/VerHistoriaClinica.aspx" Text="Historia Mascota" Value="Historia Mascota"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </header>
+    <div class="container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <footer>
+        <div class="container">
+            <p>Tarea realizada para el Obligatorio de Programación 2, Profesora: Liliana Pino - Junio 2016 - <a href="https://www.linkedin.com/in/fernandapb" target="_blank">Fernanda Pérez</a> | <a href="https://www.linkedin.com/in/diegopapaterra" target="_blank">Diego Papaterra</a></p>
+        </div>
+    </footer>
+    </form>
+    <script src="scripts/jQuery2.2.4.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/sweetalert.min.js"></script>
+</body>
+</html>

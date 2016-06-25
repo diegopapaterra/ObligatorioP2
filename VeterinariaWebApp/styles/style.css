@@ -1,0 +1,133 @@
+﻿body {
+    background: #222222;
+}
+.correcto {
+    color: green !important;
+}
+.error {
+    color: red !important;
+}
+p {
+    color: white;
+}
+header {
+    background: #B71C1C;
+}
+header .MenuGeneral {
+    margin: 10px 0;
+    background: #B71C1C;
+}
+header .MenuGeneral ul {
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    header .MenuGeneral, header .MenuGeneral ul {
+        float: none !important;
+    }
+    header .MenuGeneral ul li {
+    display: block !important;
+    text-align: center;
+    }
+}
+header .MenuGeneral ul li {
+    float: none !important;
+    display:inline-block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    background: #B71C1C;
+    color: white;
+    transition: background 0.6s ease;
+}
+header .MenuGeneral ul li:hover {
+    background: #222;
+    color: #B71C1C;
+}
+header .MenuGeneral ul li a {
+    color: white;
+}
+header #lblUsername {
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 0 10px;
+}
+header .navbar-toggle {
+    float: left;
+    font-size: 20px;
+    color: white;
+}
+.alta-container {
+    max-width:500px;
+    display: block;
+    margin: auto;
+}
+.alta-container h1, .alta-container span, .listado-container h1 {
+    color: white;
+    text-align: center;
+}
+.alta-container label {
+    color: white;
+    margin: 0 10px;
+}
+.listado-container {
+    width: 100%;
+}
+.listado-container .form-group {
+    text-align: center;
+}
+.select-wide {
+    width: 100%;
+    overflow-x: visible;
+}
+.login-container {
+    background: rgba(255,255,255,0.4);
+    max-width: 400px;
+    display: block;
+    margin: 150px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+}
+.login-container table {
+    width: 100%;
+}
+.login-container table td {
+    text-align: center;
+}
+.login-container table tbody tr td table tbody tr:nth-child(1) {
+    font-size: 16px;
+    font-weight: bold;
+}
+.login-container input {
+    color: black;
+}
+.login-container input[type="submit"]{
+    background: #B71C1C;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+}
+footer {
+    background: #B71C1C;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: #222222;
+    text-decoration: none;
+}
+#form1 > .container {
+    padding-bottom: 70px;
+}
+.align-center {
+    text-align:center;
+}
